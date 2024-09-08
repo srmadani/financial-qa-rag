@@ -66,7 +66,7 @@ This project is licensed under the Apache License 2.0. See the LICENSE file for 
 
 - Dataset source: [Kaggle - Financial Q&A 10k](https://www.kaggle.com/datasets/yousefsaeedian/financial-q-and-a-10k)
 - Preprocessing credit: [Kaggle Notebook](https://www.kaggle.com/code/banddaniel/financial-question-answering-w-gemma-2b-lora)
-- RAG design credit: [DataTalksClub/llm-zoomcamp] (https://github.com/DataTalksClub/llm-zoomcamp)
+- RAG design credit: [DataTalksClub/llm-zoomcamp](https://github.com/DataTalksClub/llm-zoomcamp)
 
 ## Disclaimer
 

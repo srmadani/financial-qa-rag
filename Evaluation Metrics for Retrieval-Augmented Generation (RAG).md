@@ -31,9 +31,9 @@ In a Retrieval-Augmented Generation (RAG) system, a retriever finds relevant doc
 
 **Formula:**
 
-$
+$$
 P@k = \frac{\text{Number of relevant documents in top } k}{k}
-$
+$$
 
 **Example:**
 
@@ -55,9 +55,9 @@ $
 
 **Formula:**
 
-$
+$$
 \text{Recall} = \frac{\text{Number of relevant documents retrieved}}{\text{Total number of relevant documents}}
-$
+$$
 
 **Example:**
 
@@ -74,9 +74,9 @@ $
 
 **Formula:**
 
-$
+$$
 \text{MAP} = \frac{1}{Q} \sum_{q=1}^{Q} \text{Average Precision for query } q
-$
+$$
 
 **Example:**
 
@@ -95,18 +95,18 @@ $
 
 **Formula:**
 
-$
+$$
 \text{NDCG} = \frac{\text{DCG}}{\text{IDCG}}
-$
+$$
 
 Where:
 
-$
+$$
 \text{DCG} = \sum_{i=1}^{p} \frac{2^{\text{rel}_i} - 1}{\log_2(i + 1)}
-$
+$$
 
-- $ \text{rel}_i $ is the relevance score at position $ i $.
-- $ \text{IDCG} $ is the ideal DCG with perfect ranking.
+- $$ \text{rel}_i $$ is the relevance score at position $$ i $$.
+- $$ \text{IDCG} $$ is the ideal DCG with perfect ranking.
 
 **Example:**
 
@@ -124,9 +124,9 @@ $
 
 **Formula:**
 
-$
+$$
 \text{MRR} = \frac{1}{Q} \sum_{q=1}^{Q} \frac{1}{\text{Rank of first relevant document in query } q}
-$
+$$
 
 **Example:**
 
@@ -145,15 +145,15 @@ $
 
 **Formula:**
 
-$
+$$
 F1 = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}
-$
+$$
 
 **Example:**
 
 - **Precision:** 0.7
 - **Recall:** 0.5
-- **Calculation:** $ 2 \times \frac{0.7 \times 0.5}{0.7 + 0.5} $
+- **Calculation:** $$ 2 \times \frac{0.7 \times 0.5}{0.7 + 0.5} $$
 - **F1 Score ≈ 0.58**
 
 ---
@@ -180,9 +180,9 @@ $
 
 **Formula:**
 
-$
+$$
 \text{Mean Rank} = \frac{\sum_{q=1}^{Q} \text{Rank of first relevant document in query } q}{Q}
-$
+$$
 
 **Example:**
 
@@ -201,9 +201,9 @@ $
 
 **Formula:**
 
-$
+$$
 \text{HR@k} = \frac{\text{Number of queries with a relevant document in top } k}{Q}
-$
+$$
 
 **Example:**
 
@@ -220,11 +220,11 @@ $
 
 **Formula:**
 
-$
+$$
 \text{ERR} = \sum_{i=1}^{n} \frac{1}{i} \left( \prod_{j=1}^{i-1} (1 - r_j) \right) r_i
-$
+$$
 
-- $ r_i $ is the relevance probability at position $ i $.
+- $$ r_i $$ is the relevance probability at position $$ i $$.
 
 **Example:**
 
